@@ -91,19 +91,86 @@
 <div class="container">
 
   <!-- PROJET 1 -->
-  <div class="project">
-    <img src="https://images.unsplash.com/photo-1581091870627-3a6c79c4f5a9" alt="Network Infrastructure">
+<section class="project-section" id="projet1">
+  <h2>🧩 Projet 1 : Déploiement d’infrastructures réseau</h2>
+
+  <div class="project-card">
+    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" alt="Network Infrastructure">
+
     <div class="project-content">
-      <h2>Projet 1 : Déploiement d’infrastructures réseau</h2>
+      <h3> Terrain 1</h3>
+
       <ul>
-        <li>27 switches Cisco (VLAN, SSH, Trunk, Management)</li>
-        <li>2 switches Core Grandstream en stack</li>
-        <li>Firewall Fortinet (VLAN 10 à 90, politiques de sécurité)</li>
-        <li>Infrastructure Wi-Fi (1 Master + 80 AP Slave)</li>
-        <li>6 lignes Internet 1 Gbps</li>
+        <li><strong>27 switches d’accès Cisco</strong>
+          <ul>
+            <li>Configuration de base (hostname, IP, sécurité)</li>
+            <li>Création et gestion des VLAN</li>
+            <li>Accès distant sécurisé (SSH)</li>
+            <li>VLAN de management</li>
+            <li>Ports Trunk (fibre & points d’accès)</li>
+            <li>Répartition des ports selon les besoins métiers</li>
+          </ul>
+        </li>
+
+        <li><strong>2 switches cœur Grandstream (Stack)</strong>
+          <ul>
+            <li>Configuration de base</li>
+            <li>Ports en mode Untagged</li>
+            <li>Interconnexion fibre avec switches d’accès</li>
+          </ul>
+        </li>
+
+        <li><strong>Firewall Fortinet FortiGate 90G</strong>
+          <ul>
+            <li>VLAN 10 à VLAN 90</li>
+            <li>Politiques de sécurité</li>
+            <li>Intégration avec le core network</li>
+            <li>Sécurisation du trafic inter-VLAN</li>
+          </ul>
+        </li>
+
+        <li><strong>Infrastructure Wi-Fi Grandstream</strong>
+          <ul>
+            <li>1 point d’accès Master</li>
+            <li>80 points d’accès Slave</li>
+          </ul>
+        </li>
+
+        <li><strong>Connectivité Internet</strong>
+          <ul>
+            <li>6 lignes Internet de 1 Gbps</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3> Terrain 2 & Terrain 3</h3>
+
+      <ul>
+        <li><strong>Infrastructure Wi-Fi</strong>
+          <ul>
+            <li>30 points d’accès Grandstream</li>
+          </ul>
+        </li>
+
+        <li><strong>Réseau filaire</strong>
+          <ul>
+            <li>12 switches Cisco</li>
+            <li>Segmentation réseau par VLAN</li>
+          </ul>
+        </li>
+
+        <li><strong>Sécurité réseau</strong>
+          <ul>
+            <li>Firewall Fortinet</li>
+            <li>5 VLAN</li>
+            <li>Application des règles de sécurité</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
+</section>
+
 
   <!-- PROJET 2 -->
   <div class="project">
