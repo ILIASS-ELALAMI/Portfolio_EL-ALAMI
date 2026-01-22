@@ -1,274 +1,169 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio – ILIASS EL ALAMI</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #0f172a;
-            color: #e5e7eb;
-        }
-        header {
-            background: #020617;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-        header p {
-            font-size: 18px;
-            color: #38bdf8;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            color: #38bdf8;
-            border-bottom: 2px solid #1e293b;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style: square;
-            margin-left: 20px;
-        }
-        footer {
-            background: #020617;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-<style>
+  <meta charset="UTF-8">
+  <title>Portfolio IT - Réseaux & Systèmes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
     body {
-        margin: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
-        background: linear-gradient(180deg, #020617, #0f172a);
-        color: #e5e7eb;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
     }
 
     header {
-        background: radial-gradient(circle at top, #020617, #020617);
-        padding: 70px 20px;
-        text-align: center;
+      background: linear-gradient(135deg, #2563eb, #0ea5e9);
+      padding: 60px 20px;
+      text-align: center;
     }
 
     header h1 {
-        margin: 0;
-        font-size: 38px;
-        letter-spacing: 1px;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
 
     header p {
-        color: #38bdf8;
-        font-size: 18px;
-        margin-top: 12px;
+      font-size: 1.1rem;
+      opacity: 0.9;
     }
 
-    section {
-        max-width: 1100px;
-        margin: auto;
-        padding: 50px 20px;
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
-    h2 {
-        color: #38bdf8;
-        border-left: 4px solid #38bdf8;
-        padding-left: 12px;
-        margin-bottom: 30px;
+    .project {
+      background: #020617;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
     }
 
-    h3 {
-        color: #f8fafc;
-        margin-top: 0;
+    .project img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
     }
 
-    /* CARTES */
-    .project-card {
-        background: #020617;
-        border-radius: 12px;
-        padding: 25px;
-        margin-bottom: 35px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-        transition: transform 0.3s ease;
+    .project-content {
+      padding: 25px;
     }
 
-    .project-card:hover {
-        transform: translateY(-5px);
+    .project h2 {
+      color: #38bdf8;
+      margin-bottom: 10px;
     }
 
-    .project-card img {
-        width: 100%;
-        border-radius: 10px;
-        margin: 15px 0;
-        border: 1px solid #1e293b;
+    .project ul {
+      padding-left: 20px;
     }
 
-    ul {
-        padding-left: 20px;
-    }
-
-    li {
-        margin-bottom: 6px;
+    .project li {
+      margin-bottom: 8px;
     }
 
     footer {
-        background: #020617;
-        text-align: center;
-        padding: 25px;
-        font-size: 14px;
-        color: #94a3b8;
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
     }
 
-    a {
-        color: #38bdf8;
-        text-decoration: none;
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
     }
-</style>
+  </style>
+</head>
 
+<body>
 
-<section>
-    <h2>À propos de moi</h2>
-    <p>
-        Technicien spécialisé en systèmes et réseaux, diplômé de l’OFPPT,
-        passionné par l’infrastructure IT, la sécurité et le cloud computing.
-        Motivé, autonome et orienté résolution de problèmes.
-    </p>
-</section>
+<header>
+  <h1>Portfolio IT – Réseaux & Systèmes</h1>
+  <p>Administration Réseaux • Supervision • VoIP • Linux • Virtualisation</p>
+</header>
 
-<section>
-    <h2>Compétences</h2>
-    <ul>
-        <li>Réseaux : VLAN, Routage, DHCP, DNS</li>
-        <li>Systèmes : Windows Server, Linux (CentOS, Fedora)</li>
-        <li>Sécurité : Firewall, ACL, IDS/IPS, Wazuh</li>
-        <li>Virtualisation : VMware</li>
-        <li>Cloud : Microsoft Azure (bases)</li>
-    </ul>
-</section>
+<div class="container">
 
-<!-- ===== PROJETS ===== -->
-<section id="projects">
-    <h2>Projets professionnels</h2>
+  <!-- PROJET 1 -->
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1581091870627-3a6c79c4f5a9" alt="Network Infrastructure">
+    <div class="project-content">
+      <h2>Projet 1 : Déploiement d’infrastructures réseau</h2>
+      <ul>
+        <li>27 switches Cisco (VLAN, SSH, Trunk, Management)</li>
+        <li>2 switches Core Grandstream en stack</li>
+        <li>Firewall Fortinet (VLAN 10 à 90, politiques de sécurité)</li>
+        <li>Infrastructure Wi-Fi (1 Master + 80 AP Slave)</li>
+        <li>6 lignes Internet 1 Gbps</li>
+      </ul>
+    </div>
+  </div>
 
-    <!-- PROJET 1 -->
-    <h3>Projet 1 : Contrats de support & maintenance IT (multi-sociétés)</h3>
-    <p>
-        Gestion et maintenance d’infrastructures IT pour plusieurs entreprises,
-        incluant administration systèmes, réseaux, sécurité et virtualisation.
-    </p>
-    <ul>
-        <li><strong>Administration Windows Server :</strong>
-            AD, GPO, DNS, IIS, RDP, partages de fichiers, sauvegardes Windows Server.
-        </li>
-        <li><strong>Gestion des utilisateurs et domaines :</strong>
-            création des comptes, politiques de sécurité, intégration au domaine.
-        </li>
-        <li><strong>Stockage & disponibilité :</strong>
-            RAID 1 pour l’OS, RAID 5 pour les données.
-        </li>
-        <li><strong>Migrations :</strong>
-            migration Windows Server 2012 R2 vers Windows Server 2022.
-        </li>
-        <li><strong>Déploiement serveurs :</strong>
-            installation de nouveaux serveurs et jonction au domaine.
-        </li>
-        <li><strong>Administration réseau :</strong>
-            switching, points d’accès, connectivité Internet.
-        </li>
-        <li><strong>Sécurité :</strong>
-            Firewall (WAN, LAN, DMZ), filtrage web, VPN IPsec (site-to-site & remote),
-            VLAN, policies de sécurité, antivirus Kaspersky.
-        </li>
-        <li><strong>Virtualisation :</strong>
-            VMware ESXi, Hyper-V, Proxmox.
-        </li>
-    </ul>
+  <!-- PROJET 2 -->
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9" alt="Server Room">
+    <div class="project-content">
+      <h2>Projet 2 : Administration Réseaux & Support IT</h2>
+      <ul>
+        <li>Support IT N1/N2 multi-clients</li>
+        <li>VMware ESXi + RAID 1 (OS) / RAID 5 (DATA)</li>
+        <li>Active Directory, GPO, Sage, Gecimmo</li>
+        <li>Imprimantes, sauvegardes, gestion utilisateurs</li>
+      </ul>
+    </div>
+  </div>
 
-    <!-- PROJET 2 -->
-    <h3>Projet 2 : Déploiement d’infrastructures réseau hautement disponibles</h3>
-    <p>
-        Conception et déploiement d’infrastructures réseau sécurisées pour
-        des terrains de football accueillant des compétitions internationales
-        (Casablanca, Rabat, Oujda, Berkane, Mohammedia).
-    </p>
-    <ul>
-        <li><strong>Architecture réseau :</strong>
-            ~30 switches d’accès, 2 switches cœur et 2 pare-feux FortiGate par site.
-        </li>
-        <li><strong>Wi-Fi haute densité :</strong>
-            30 à 120 points d’accès sécurisés par site.
-        </li>
-        <li><strong>Haute disponibilité :</strong>
-            2 à 6 liens Internet 1 Gbps avec load balancing.
-        </li>
-        <li><strong>Configuration avancée :</strong>
-            VLAN, QoS, EtherChannel, STP, contrôleur Wi-Fi (WLC).
-        </li>
-        <li><strong>Sécurité réseau :</strong>
-            Pare-feux FortiGate, SD-WAN, HA, supervision et monitoring.
-        </li>
-    </ul>
+  <!-- PROJET 3 -->
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957" alt="Monitoring">
+    <div class="project-content">
+      <h2>Projet 3 : Supervision & Monitoring</h2>
+      <ul>
+        <li>Zabbix Server & Proxy</li>
+        <li>Supervision serveurs, réseaux et services</li>
+        <li>Alertes, seuils, analyse proactive</li>
+      </ul>
+    </div>
+  </div>
 
-    <!-- PROJET 3 -->
-    <h3>Projet 3 : Administration Linux, virtualisation & conteneurisation</h3>
-    <p>
-        Mise en place d’un environnement virtualisé et conteneurisé
-        pour le déploiement d’applications métiers.
-    </p>
-    <ul>
-        <li>Installation d’un serveur Proxmox pour la virtualisation.</li>
-        <li>Création de VM Debian.</li>
-        <li>Déploiement de conteneurs Docker avec Docker Compose.</li>
-        <li>Services déployés : Odoo, Nginx, PostgreSQL.</li>
-        <li>Gestion des dépendances entre services.</li>
-        <li>Liaison de PyCharm avec Odoo pour faciliter le développement applicatif.</li>
-    </ul>
+  <!-- PROJET 4 -->
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1600267165477-6d4cc741b379" alt="VoIP">
+    <div class="project-content">
+      <h2>Projet 4 : VoIP & Téléphonie IP</h2>
+      <ul>
+        <li>Grandstream & 3CX</li>
+        <li>PBX, SIP, extensions</li>
+        <li>Provisioning téléphones IP</li>
+        <li>VLAN Voix & QoS</li>
+      </ul>
+    </div>
+  </div>
 
-    <!-- PROJET 4 -->
-    <h3>Projet 4 : Déploiement d’une solution de supervision (Zabbix)</h3>
-    <ul>
-        <li>Installation et configuration de Zabbix.</li>
-        <li>Supervision des serveurs, équipements réseau et services.</li>
-        <li>Mise en place d’alertes et tableaux de bord.</li>
-    </ul>
+  <!-- PROJET 5 -->
+  <div class="project">
+    <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97" alt="Linux Docker">
+    <div class="project-content">
+      <h2>Projet 5 : Linux & Conteneurisation</h2>
+      <ul>
+        <li>Debian Server</li>
+        <li>Docker & conteneurs</li>
+        <li>Odoo (ERP)</li>
+        <li>Sauvegarde et maintenance</li>
+      </ul>
+    </div>
+  </div>
 
-    <!-- PROJET 5 -->
-    <h3>Projet 5 : Solution de contrôle d’accès biométrique (ZKTeco BioTime)</h3>
-    <ul>
-        <li>Déploiement et configuration de la solution ZKTeco BioTime.</li>
-        <li>Gestion des accès utilisateurs et du pointage.</li>
-        <li>Intégration avec l’infrastructure existante.</li>
-    </ul>
-
-    <!-- PROJET 6 -->
-    <h3>Projet 6 : Déploiement de solutions de téléphonie IP</h3>
-    <ul>
-        <li>Installation et configuration de systèmes IPBX Grandstream.</li>
-        <li>Déploiement et administration de la solution 3CX.</li>
-        <li>Gestion des extensions, trunks SIP et sécurité VoIP.</li>
-    </ul>
-
-</section>
-
-
-<section>
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:alamiilyass20052005@gmail.com">alamiilyass20052005@gmail.com</a></p>
-    <p>GitHub : <a href="https://github.com/ILIASS-ELALAMI" target="_blank">github.com/ILIASS-ELALAMI</a></p>
-</section>
+</div>
 
 <footer>
-    © 2026 – ILIASS EL ALAMI
+  © 2026 – ILIASS EL ALAMI | Réseaux & Systèmes
 </footer>
 
 </body>
