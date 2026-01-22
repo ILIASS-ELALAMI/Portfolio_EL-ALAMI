@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Portfolio IT - Réseaux & Systèmes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
@@ -35,6 +36,7 @@
       padding: 40px 20px;
     }
 
+    /* ===== DESIGN STANDARD PROJETS ===== */
     .project {
       background: #020617;
       border-radius: 12px;
@@ -66,16 +68,65 @@
       margin-bottom: 8px;
     }
 
+    /* ===== DESIGN PREMIUM PROJET 1 ===== */
+    #projet1 {
+      margin-bottom: 80px;
+    }
+
+    #projet1 h2 {
+      text-align: center;
+      font-size: 2.3rem;
+      color: #38bdf8;
+      margin-bottom: 30px;
+    }
+
+    .project-card {
+      background: linear-gradient(180deg, #020617, #020617cc);
+      border-radius: 18px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 35px 80px rgba(0,0,0,0.8);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      filter: brightness(0.9) contrast(1.1);
+      border-bottom: 1px solid #0f172a;
+    }
+
+    #projet1 .project-content h3 {
+      color: #0ea5e9;
+      margin-top: 30px;
+      font-size: 1.3rem;
+      border-left: 4px solid #0ea5e9;
+      padding-left: 12px;
+    }
+
+    #projet1 ul > li {
+      margin-bottom: 12px;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
       background: #020617;
       color: #94a3b8;
+      margin-top: 60px;
     }
 
     @media (max-width: 768px) {
       header h1 {
         font-size: 2rem;
+      }
+      .project-card img {
+        height: 240px;
       }
     }
   </style>
@@ -90,89 +141,71 @@
 
 <div class="container">
 
-  <!-- PROJET 1 -->
-<section class="project-section" id="projet1">
-  <h2>🧩 Projet 1 : Déploiement d’infrastructures réseau</h2>
+  <!-- ================= PROJET 1 ================= -->
+  <section id="projet1">
+    <h2>🧩 Projet 1 : Déploiement d’infrastructures réseau</h2>
 
-  <div class="project-card">
-    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" alt="Network Infrastructure">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789"
+           alt="Enterprise Network Infrastructure">
 
-    <div class="project-content">
-      <h3> Terrain 1</h3>
+      <div class="project-content">
+        <h3>Terrain 1</h3>
 
-      <ul>
-        <li><strong>27 switches d’accès Cisco</strong>
-          <ul>
-            <li>Configuration de base (hostname, IP, sécurité)</li>
-            <li>Création et gestion des VLAN</li>
-            <li>Accès distant sécurisé (SSH)</li>
-            <li>VLAN de management</li>
-            <li>Ports Trunk (fibre & points d’accès)</li>
-            <li>Répartition des ports selon les besoins métiers</li>
-          </ul>
-        </li>
+        <ul>
+          <li><strong>27 switches d’accès Cisco</strong>
+            <ul>
+              <li>Configuration de base (hostname, IP, sécurité)</li>
+              <li>Création et gestion des VLAN</li>
+              <li>Accès distant sécurisé (SSH)</li>
+              <li>VLAN de management</li>
+              <li>Ports Trunk (fibre & points d’accès)</li>
+              <li>Répartition des ports selon les besoins métiers</li>
+            </ul>
+          </li>
 
-        <li><strong>2 switches cœur Grandstream (Stack)</strong>
-          <ul>
-            <li>Configuration de base</li>
-            <li>Ports en mode Untagged</li>
-            <li>Interconnexion fibre avec switches d’accès</li>
-          </ul>
-        </li>
+          <li><strong>2 switches cœur Grandstream (Stack)</strong>
+            <ul>
+              <li>Configuration de base</li>
+              <li>Ports en mode Untagged</li>
+              <li>Interconnexion fibre</li>
+            </ul>
+          </li>
 
-        <li><strong>Firewall Fortinet FortiGate 90G</strong>
-          <ul>
-            <li>VLAN 10 à VLAN 90</li>
-            <li>Politiques de sécurité</li>
-            <li>Intégration avec le core network</li>
-            <li>Sécurisation du trafic inter-VLAN</li>
-          </ul>
-        </li>
+          <li><strong>Firewall Fortinet FortiGate 90G</strong>
+            <ul>
+              <li>VLAN 10 à VLAN 90</li>
+              <li>Politiques de sécurité</li>
+              <li>Sécurisation inter-VLAN</li>
+            </ul>
+          </li>
 
-        <li><strong>Infrastructure Wi-Fi Grandstream</strong>
-          <ul>
-            <li>1 point d’accès Master</li>
-            <li>80 points d’accès Slave</li>
-          </ul>
-        </li>
+          <li><strong>Infrastructure Wi-Fi Grandstream</strong>
+            <ul>
+              <li>1 AP Master</li>
+              <li>80 AP Slave</li>
+            </ul>
+          </li>
 
-        <li><strong>Connectivité Internet</strong>
-          <ul>
-            <li>6 lignes Internet de 1 Gbps</li>
-          </ul>
-        </li>
-      </ul>
+          <li><strong>Connectivité Internet</strong>
+            <ul>
+              <li>6 lignes Internet de 1 Gbps</li>
+            </ul>
+          </li>
+        </ul>
 
-      <h3> Terrain 2 & Terrain 3</h3>
+        <h3>Terrain 2 & Terrain 3</h3>
 
-      <ul>
-        <li><strong>Infrastructure Wi-Fi</strong>
-          <ul>
-            <li>30 points d’accès Grandstream</li>
-          </ul>
-        </li>
-
-        <li><strong>Réseau filaire</strong>
-          <ul>
-            <li>12 switches Cisco</li>
-            <li>Segmentation réseau par VLAN</li>
-          </ul>
-        </li>
-
-        <li><strong>Sécurité réseau</strong>
-          <ul>
-            <li>Firewall Fortinet</li>
-            <li>5 VLAN</li>
-            <li>Application des règles de sécurité</li>
-          </ul>
-        </li>
-      </ul>
+        <ul>
+          <li>30 points d’accès Wi-Fi Grandstream</li>
+          <li>12 switches Cisco</li>
+          <li>Firewall Fortinet avec 5 VLAN</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- PROJET 2 -->
+  <!-- ================= PROJET 2 ================= -->
   <div class="project">
     <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9" alt="Server Room">
     <div class="project-content">
@@ -186,7 +219,7 @@
     </div>
   </div>
 
-  <!-- PROJET 3 -->
+  <!-- ================= PROJET 3 ================= -->
   <div class="project">
     <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957" alt="Monitoring">
     <div class="project-content">
@@ -199,7 +232,7 @@
     </div>
   </div>
 
-  <!-- PROJET 4 -->
+  <!-- ================= PROJET 4 ================= -->
   <div class="project">
     <img src="https://images.unsplash.com/photo-1600267165477-6d4cc741b379" alt="VoIP">
     <div class="project-content">
@@ -213,7 +246,7 @@
     </div>
   </div>
 
-  <!-- PROJET 5 -->
+  <!-- ================= PROJET 5 ================= -->
   <div class="project">
     <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97" alt="Linux Docker">
     <div class="project-content">
